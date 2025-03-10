@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "checkJs": true,
+    "jsx": "react-native"
+  },
+  "include": [
+    "src"
+  ]
+}
