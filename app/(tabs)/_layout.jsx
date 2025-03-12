@@ -41,3 +41,17 @@ export default function TabLayout() {
     </Tabs>
   );
 }
+
+function myTrip({ color }) {
+  return (
+    <Tabs.Screen
+      name="mytrip"
+      options={{
+        tabBarLabel: "My Trip",
+        tabBarIcon: ({ color }) => (
+          <Ionicons name="location-sharp" size={24} color={color} />
+        ),
+      }}
+    />
+  );
+}
