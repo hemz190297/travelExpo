@@ -17,7 +17,7 @@ const SignIn = () => {
         // Signed in
         const user = userCredential.user;
         router.replace("/mytrip");
-        console.log("user::::::", user);
+        // console.log("user::::::", user);
         // ...
       })
       .catch((error) => {

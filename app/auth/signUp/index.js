@@ -28,7 +28,7 @@ const SignUp = () => {
       .then((userCredential) => {
         // Signed up
         const user = userCredential.user;
-        console.log("user::::", user);
+        // console.log("user::::", user);
         router.replace("/mytrip");
 
         // ...

@@ -1,4 +1,4 @@
-const API_BASE_URL = "https://api.example.com"; // Replace with your API base URL
+const API_BASE_URL = "https://api.example.com";
 
 const request = async (endpoint, method = "GET", body = null, headers = {}) => {
   const token = "your-auth-token"; // Fetch from secure storage if needed

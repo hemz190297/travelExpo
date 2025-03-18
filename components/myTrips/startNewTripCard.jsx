@@ -2,11 +2,18 @@ import { View, Text, TouchableOpacity } from "react-native";
 import React from "react";
 import Entypo from "@expo/vector-icons/Entypo";
 import { Colors } from "@/constants/Colors";
-
+import { useRouter } from "expo-router";
 const StartNewTripCard = () => {
+  const router = useRouter();
   return (
     <View
-      style={{ marginTop: 50, display: "flex", alignItems: "center", gap: 35 }}
+      style={{
+        marginTop: 50,
+        display: "flex",
+        alignItems: "center",
+        gap: 35,
+        backgroundColor: Colors.WHITE,
+      }}
     >
       <Entypo name="location-pin" size={30} color="black" />
       <Text
@@ -37,6 +44,7 @@ const StartNewTripCard = () => {
           borderRadius: 20,
           alignItems: "center",
         }}
+        onPress={() => router.push("/create-trip/Search-place")}
       >
         <Text
           style={{ color: Colors.WHITE, fontSize: 18, fontFamily: "outfit" }}
